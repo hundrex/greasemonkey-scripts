@@ -9,8 +9,8 @@
 // @grant       GM_addStyle
 // ==/UserScript==
 
-waitForKeyElements (".ad-iindicator", actionFunction);
+waitForKeyElements (".logged", actionFunction);
 
 function actionFunction (jNode) {
-jNode.parent().parent().parent().parent().parent().parent().parent().remove();
+jNode.parent().parent().remove();
 }
